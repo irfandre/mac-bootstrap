@@ -83,3 +83,16 @@ chflags nohidden ~/Library
 
 # Remove duplicates in the “Open With” menu (also see `lscleanup` alias)
 /System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -kill -r -domain local -domain system -domain user
+
+
+# windows 
+# =======
+
+# Prefer tabs when opening documents
+#defaults write -app LiveCode AppleWindowTabbingMode -string always
+
+# sublime key repeat
+defaults write com.sublimetext.4 ApplePressAndHoldEnabled -bool false
+
+# Joplin key repeat
+defaults write net.cozic.joplin-desktop ApplePressAndHoldEnabled -bool false
